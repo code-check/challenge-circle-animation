@@ -4,21 +4,47 @@
   <meta charset="utf-8">
   <title> codecheck | Find Great Developers </title>
   <link rel="stylesheet" href="circle.css">
-  <link rel="stylesheet" href="./challenge/challenge.css">
+  <link rel="stylesheet" href="../challenge/solveChallenge.css">
 </head>
 <body>
   <header>
     <h2>Javascript Interactive Challenge</h2>
-    <p><span class="bold">Challenge 1 - </span>Continuously move the red circle on horizontal line (diameter).</p>
-    <p><span class="bold">Challenge 2 - </span>Create vertical diameter, create a inner red circle on it and continuosly move the red circle on vertical diameter.</p>
-    <p><span class="bold">Challenge 3 - </span>Create a function to pass n number of lines(diameters), similarly create inner red circles for all diameters and make them move.</p>
+
+    <p><span class="bold">Challenge 1 - </span>Continuously move the inner white circle on horizontal line (diameter).</p>
+    <canvas class="challenge" id="challenge1" width="150" height="150"></canvas><br><br>
+    <button id="btnHint1">Hint</button>
+    <p id="hint1" style="display:none;">use "requestAnimationFrame" to animate circle.</p>
+
+    <p><span class="bold">Challenge 2 - </span>Create diameters with diameter count as 8 i.e 16 radius Count.</p>
+    <canvas class= "challenge" id="challenge2" width="150" height="150"></canvas><br><br>
+    <button id="btnHint2">Hint</button>
+    <p id="hint2" style="display:none;">use loop</p>
+
+    <p><span class="bold">Challenge 3 - </span>Create inner circles equal to diameter count i.e 8 and make them move.</p>
+    <canvas class= "challenge" id="challenge3" width="150" height="150"></canvas><br><br>
+    <button id="btnHint3">Hint</button>
+    <p id="hint3" style="display:none;">use loop</p>
+
+    <p><span class="bold">Challenge 4 - </span>Stop animation</p>
+    <button id="btnHint4">Hint</button>
+    <p id="hint4" style="display:none;">use "cancelAnimationFrame" to stop animate</p>
+
   </header>
   <main id="main">
+    <h2>CHALLENGE</h2>
     <canvas id="myCanvas" width="360" height="360"></canvas>
+    <br><br>
+    <button id="btnSolveChallenge1">Solve Challenge 1</button>
+    <button id="btnSolveChallenge2">Solve Challenge 2</button>
+    <button id="btnSolveChallenge3">Solve Challenge 3</button>
+    <br><br>
+    <button id="btnSolveStop">Stop Animation</button>
   </main>
   <footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.js"></script>
     <script src="circle.js"></script>
-    <script src="./challenge/challenge.js"></script>
+    <script src="challenge.js"></script>
+    <script src="../challenge/solveChallenge.js"></script>
   </footer>
 </body>
 </html>
