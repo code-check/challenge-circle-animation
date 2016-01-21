@@ -9,9 +9,8 @@ var innerRadius = 10;
 var radiusCount = 8; /* radiusCount will be equal to number of smaller balls */
 var maxstep = 164;   /* number of steps the innercircle should take to move */
 var step = 0;
-var drawCircleCount = 0;
-var drawLineCount = 0;
 
+var testObj = new Test();
 $("#btnHint1").on("click", function () {
   var e = document.getElementById('hint1');
   if (e.style.display == 'none')
@@ -61,7 +60,9 @@ challenge = {
     context.arc(x, y, r, 0, 2*Math.PI);
     context.fillStyle = c;
     context.fill();
-    // drawCircleCount++;
+    if(testObj.circleCnt() < 23) {
+    testObj.testAnimateCircle(); }
+    console.log(testObj.circleCnt());
   },
   drawLine: function(context, x1, y1, x2, y2, c) {
     context.beginPath();
@@ -70,8 +71,13 @@ challenge = {
     context.lineWidth = 2;
     context.strokeStyle = c;
     context.stroke();
-    // drawLineCount++; 
+    testObj.testAnimateLine();
   }
+}
+
+function checkIfSuccess() {
+  if (testObj.testCircle === 3)
+    return true;
 }
 
 function drawBaseImage() {
