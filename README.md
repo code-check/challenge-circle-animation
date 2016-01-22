@@ -10,12 +10,12 @@ npm install -g codecheck
 ```bash
 codecheck
 ```
-- ##### Now you can solve the challenge locally 
+- Now you can solve the challenge locally 
     - Open another terminal run ***http-server*** 
     - On browser goto "http://localhost:8080/circle/circle.html" you will see the challenge
 
 #### Note:
-- ##### Pass the [tests](spec/challengeSpec.js)  in sequence.
+- Pass the [tests](spec/challengeSpec.js)  in sequence.
 - ***HTML5 <canvas>*** tag is used to draw the graphics.
 - ***requestAnimationFrame*** is used for animation.
 - If you really want to dig into Mathematical Equations used to draw circles refer [Parametric equation for a circle](https://en.wikipedia.org/wiki/Circle#Equations)
