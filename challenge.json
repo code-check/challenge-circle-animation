@@ -1,0 +1,10 @@
+{
+  "editable": [
+    "challenge/*"
+  ],
+  "exclude": [
+    "challenge.json",
+    "circle/test.js"
+  ],
+  "test": "mocha spec/*"
+}
