@@ -1,5 +1,5 @@
 {
-  "name": "javascript-interactive-challenge-canvas",
+  "name": "circle-animation-challenge",
   "version": "1.0.0",
   "description": "Learn html5 canvas element and basic javascript by passing the specs in series.",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sukeshni/javascript-interactive-challenge-1.git"
+    "url": "https://github.com/code-check/circle-animation-challenge.git"
   },
   "keywords": [
     "html",
@@ -20,9 +20,9 @@
   "author": "Givery Inc.",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sukeshni/javascript-interactive-challenge-1/issues"
+    "url": "https://github.com/code-check/circle-animation-challenge/issues"
   },
-  "homepage": "https://github.com/sukeshni/javascript-interactive-challenge-1#readme",
+  "homepage": "https://github.com/code-check/circle-animation-challenge#readme",
   "devDependencies": {
     "canvas": "^1.3.7",
     "chai": "^3.4.1",
