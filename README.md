@@ -1,5 +1,6 @@
 # circle-animation-challenge
 - Interactive Challenge in javascript/html/css.
+
 #### Minimal Setup 
 - Download the git repository
 - Install codecheck globally
