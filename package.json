@@ -1,0 +1,35 @@
+{
+  "name": "javascript-interactive-challenge-canvas",
+  "version": "1.0.0",
+  "description": "Learn html5 canvas element and basic javascript by passing the specs in series.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha specs/*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukeshni/javascript-interactive-challenge-1.git"
+  },
+  "keywords": [
+    "html",
+    "javascript",
+    "mocha",
+    "css",
+    "challenge"
+  ],
+  "author": "Givery Inc.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sukeshni/javascript-interactive-challenge-1/issues"
+  },
+  "homepage": "https://github.com/sukeshni/javascript-interactive-challenge-1#readme",
+  "devDependencies": {
+    "canvas": "^1.3.7",
+    "chai": "^3.4.1",
+    "express": "^4.13.3",
+    "http-server": "^0.8.5",
+    "jsdom": "^7.2.2",
+    "mocha": "^2.3.4"
+  },
+  "dependencies": {}
+}

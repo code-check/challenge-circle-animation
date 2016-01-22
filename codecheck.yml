@@ -1,0 +1,8 @@
+build:
+  - npm install
+  - npm install http-server -g
+web:
+  command: http-server
+  port: 8080
+  console: true
+test: mocha spec/*
