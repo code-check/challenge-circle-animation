@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/sukeshni/javascript-interactive-challenge-1#readme",
   "devDependencies": {
+    "canvas": "^1.3.7",
     "chai": "^3.4.1",
     "express": "^4.13.3",
     "jsdom": "^7.2.2",
