@@ -17,6 +17,6 @@ codecheck
 
 #### Note:
 - Pass the [tests](spec/challengeSpec.js)  in sequence.
-- ***HTML5 <canvas>*** tag is used to draw the graphics.
+- ***HTML5 `<canvas>`*** tag is used to draw the graphics.
 - ***requestAnimationFrame*** is used for animation.
 - If you really want to dig into Mathematical Equations used to draw circles refer [Parametric equation for a circle](https://en.wikipedia.org/wiki/Circle#Equations)
