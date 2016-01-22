@@ -4,6 +4,5 @@ build:
 web:
   command: http-server
   port: 8080
-  # dir: circle
   console: true
 test: mocha spec/*

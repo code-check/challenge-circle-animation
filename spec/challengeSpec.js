@@ -1,34 +1,27 @@
 "use strict";
-var env = require("jsdom").env,
-    assert = require("chai").assert,
-    express = require("express"),
-    app = express();
+// var env = require("jsdom").env,
+var jsdom = require('jsdom'),
+    assert = require("chai").assert;
+    // express = require("express"),
+    // app = express();
 
 describe("Test1", function () {
-  var listener, $, window;
+  var $, window;
 
   before(function (done) {
     this.timeout(5000);
-    app.use(express.static("./circle"));
-    // app.use(express.static("./challenge"));
-
-    listener = app.listen(0, function () {
-      env({
-        // url: "http://127.0.0.1:" + listener.address().port + "/circle.html",
+      jsdom.env({
         url: "http://localhost:8080/circle/circle.html",
         features: {
           FetchExternalResources: ['script'],
           ProcessExternalResources: ['script']
         },
         done: function (errors, w) {
-          console.log("listener.address().port", listener.address().port);
           window = w;
           $ = require("jquery")(window);
-          // console.log($("body").html());
           done();
         }
       });
-    });
 
   });
 
