@@ -1,23 +1,4 @@
 'use strict';
-// var Test = function(){
-//   var testCircle = 0;
-//   var testLine = 0;
-
-//   this.testAnimateCircle = function() {
-//     testCircle += 1;
-//   }
-
-//   this.circleCnt = function() {
-//     return testCircle;
-//   }
-//   this.lineCnt = function() {
-//     return testLine;
-//   }
-
-//   this.testAnimateLine = function() {
-//     testLine += 1;
-//   }
-// }
 
 var Test = (function () {
   var

@@ -6,9 +6,11 @@ var env = require("jsdom").env,
 
 describe("Test1", function () {
   var listener, $, window;
+
   before(function (done) {
     this.timeout(5000);
     app.use(express.static("./circle"));
+    // app.use(express.static("./challenge"));
 
     listener = app.listen(0, function () {
       env({
@@ -19,6 +21,7 @@ describe("Test1", function () {
           ProcessExternalResources: ['script']
         },
         done: function (errors, w) {
+          console.log("listener.address().port", listener.address().port);
           window = w;
           $ = require("jquery")(window);
           // console.log($("body").html());
@@ -26,6 +29,7 @@ describe("Test1", function () {
         }
       });
     });
+
   });
 
   it(": check if challenge1 is resolved ", function(done) {

@@ -75,11 +75,6 @@ challenge = {
   }
 }
 
-function checkIfSuccess() {
-  if (testObj.testCircle === 3)
-    return true;
-}
-
 function drawBaseImage() {
   challenge.drawCircle(myContext, canvasWidth/2, canvasHeight/2, outerRadius, '#069edb');
   var i =0;
