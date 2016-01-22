@@ -3,6 +3,7 @@
     "challenge/*"
   ],
   "exclude": [
+    ".gitignore",
     "challenge.json",
     "circle/test.js"
   ],

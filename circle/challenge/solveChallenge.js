@@ -19,7 +19,6 @@ $("#btnSolveStop").on("click", function () {
 });
 
 function stopAnimate() {
-  // console.log("requestId", requestId);
   if (requestId) {
     cancelAnimationFrame(requestId);
     requestId = undefined;
@@ -92,5 +91,3 @@ var animate3 = function(){
   step++;
   requestId = requestAnimationFrame(animate3);
 }
-
-//END_CHALLENGE

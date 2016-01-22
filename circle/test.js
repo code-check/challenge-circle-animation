@@ -14,10 +14,14 @@ var Test = (function () {
     return _line;
   };
   Test.prototype.testAnimateLine = function testAnimateLine () {
-    _line += 1;
+    if( _line <= 100 )
+      _line += 1;
+    else _line = 0;
   };
   Test.prototype.testAnimateCircle = function testAnimateCircle () {
-    _circle += 1;
+    if( _circle <= 100 )
+      _circle += 1;
+    else _circle = 0 ;
   };
   return Test;
 })();

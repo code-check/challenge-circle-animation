@@ -11,37 +11,6 @@ var maxstep = 164;   /* number of steps the innercircle should take to move */
 var step = 0;
 
 var testObj = new Test();
-$("#btnHint1").on("click", function () {
-  var e = document.getElementById('hint1');
-  if (e.style.display == 'none')
-    e.style.display = 'block';
-  else 
-    e.style.display = 'none';
-});
-
-$("#btnHint2").on("click", function () {
-  var e = document.getElementById('hint2');
-  if (e.style.display == 'none')
-    e.style.display = 'block';
-  else 
-    e.style.display = 'none';
-});
-
-$("#btnHint3").on("click", function () {
-  var e = document.getElementById('hint3');
-  if (e.style.display == 'none')
-    e.style.display = 'block';
-  else 
-    e.style.display = 'none';
-});
-
-$("#btnHint4").on("click", function () {
-  var e = document.getElementById('hint4');
-  if (e.style.display == 'none')
-    e.style.display = 'block';
-  else 
-    e.style.display = 'none';
-});
 
 var animate = function(){
   drawBaseImage();
@@ -60,9 +29,7 @@ challenge = {
     context.arc(x, y, r, 0, 2*Math.PI);
     context.fillStyle = c;
     context.fill();
-    if(testObj.circleCnt() < 23) {
-    testObj.testAnimateCircle(); }
-    console.log(testObj.circleCnt());
+    testObj.testAnimateCircle(); 
   },
   drawLine: function(context, x1, y1, x2, y2, c) {
     context.beginPath();
@@ -77,7 +44,7 @@ challenge = {
 
 function drawBaseImage() {
   challenge.drawCircle(myContext, canvasWidth/2, canvasHeight/2, outerRadius, '#069edb');
-  var i =0;
+  var i = 0;
   while(i <= 8) {  
     var x2 = canvasWidth/2 + Math.cos(i / radiusCount * Math.PI) * outerRadius;
     var y2 = canvasWidth/2  + Math.sin(i / radiusCount * Math.PI) * outerRadius;
