@@ -1,6 +1,6 @@
 {
   "editable": [
-    "challenge/*"
+    "circle/challenge/*"
   ],
   "exclude": [
     ".gitignore",
