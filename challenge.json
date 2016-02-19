@@ -7,5 +7,9 @@
     "challenge.json",
     "circle/test.js"
   ],
+  "tags": [
+    "JavaScript",
+    "HTML"
+  ],
   "test": "mocha spec/*"
 }
