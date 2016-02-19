@@ -9,7 +9,8 @@
   ],
   "tags": [
     "JavaScript",
-    "HTML"
+    "HTML",
+    "BugFix"
   ],
   "test": "mocha spec/*"
 }
